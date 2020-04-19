@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/myDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="48dp"
+        android:gravity="center_horizontal"
+        android:hint="Выбери свою дату"
+        android:textAlignment="center"
+        android:textColor="#FFF"
+        android:textSize="23sp" />
+
+    <LinearLayout
+       android:background="#FFF"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="70dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content">
+        <CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="wrap_content"
+            android:layout_height="320dp">
+
+        </CalendarView>
+    </LinearLayout>
+<Button
+   android:id="@+id/button1"
+    android:layout_marginTop="50dp"
+    android:layout_marginLeft="170dp"
+    android:text="Chose"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:onClick="notifyButtonClicked">
+
+</Button>
+</LinearLayout>
